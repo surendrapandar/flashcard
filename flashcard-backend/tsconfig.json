@@ -2,7 +2,7 @@
   "compilerOptions": {
     "target": "ES2020",                    // Set the JavaScript version for output
     "module": "commonjs",                  // Use CommonJS module system
-    "outDir": "./dist",                    // Output directory for compiled files
+    "outDir": "./public",                    // Output directory for compiled files
     "rootDir": "./src",                    // Root directory of the TypeScript files
     "strict": true,                        // Enable all strict type-checking options
     "esModuleInterop": true,               // Enable compatibility with CommonJS
