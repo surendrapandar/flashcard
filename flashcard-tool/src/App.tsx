@@ -7,7 +7,7 @@ import Dashboard from "./pages/AdminDashboard";
 const App: React.FC = () => {
   return (
     <Router>
-      <div className="min-h-screen bg-gradient-to-r from-violet-200 to-pink-200 flex flex-col items-center justify-center p-4">
+      <div className="min-h-screen bg-gradient-to-r from-violet-300 to-dark to-gray-300 flex flex-col items-center justify-center p-4">
         <Routes>
           <Route path="/" element={<FlashcardDisplay />} />
           <Route path="/dashboard" element={<Dashboard />} />
