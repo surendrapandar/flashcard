@@ -1,7 +1,6 @@
 import axios from "axios";
 
-const API_URL =
-  "https://flashcard-backend-9h8laf9eg-surendra-pandars-projects.vercel.app/api/flashcards";
+const API_URL = "https://flashcard-backend-silk.vercel.app/api/flashcards";
 
 export const getFlashcards = async () => {
   const response = await axios.get(API_URL);
