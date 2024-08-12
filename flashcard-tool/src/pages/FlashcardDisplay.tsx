@@ -37,14 +37,14 @@ const FlashcardDisplay: React.FC = () => {
   };
 
   return (
-    <div className="w-full flex justify-center flex-col items-center gap-8 ">
+    <div className="w-full flex justify-center flex-col items-center gap-8 p-4">
       <div>
         <button className="bg-red-600 text-white py-2 px-4 rounded-md shadow-md hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500 transition">
           <Link to="/dashboard">Admin DashBoard</Link>
         </button>
       </div>
-      <div className="flex w-[50%]  h-auto flex-col items-center p-6  rounded-lg shadow-lg">
-        <h1 className="font-bold text-3xl mb-3">
+      <div className="flex w-full md:w-[50%] h-auto flex-col items-center p-6 rounded-lg shadow-lg">
+        <h1 className="font-bold text-2xl md:text-3xl mb-3 text-center">
           FlashCard - By Surendra Pandar
         </h1>
         {flashcards.length > 0 && (
