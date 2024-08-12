@@ -1,14 +1,10 @@
 {
   "compilerOptions": {
-    "target": "ES2020",                    // Set the JavaScript version for output
-    "module": "commonjs",                  // Use CommonJS module system
-    "outDir": "./public",                    // Output directory for compiled files
-    "rootDir": "./src",                    // Root directory of the TypeScript files
-    "strict": true,                        // Enable all strict type-checking options
-    "esModuleInterop": true,               // Enable compatibility with CommonJS
-    "skipLibCheck": true,                  // Skip type checking of declaration files
-    "forceConsistentCasingInFileNames": true // Ensure file names are consistent
+    "target": "es2017",
+    "module": "commonjs",
+    "outDir": "dist",
+    "esModuleInterop": true,
+    "strict": true
   },
-  "include": ["src/**/*"],                 // Include all files in src folder
-  "exclude": ["node_modules"]              // Exclude node_modules folder
+  "include": ["src/**/*"]
 }

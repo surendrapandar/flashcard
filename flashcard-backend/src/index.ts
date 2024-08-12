@@ -7,9 +7,14 @@ import pool from "./config/db";
 dotenv.config();
 
 const app = express();
+app.use(
+  cors({
+    origin: true,
+    credentials: true,
+  })
+);
 const port = 3000;
 
-app.use(cors());
 app.use(express.json());
 
 pool
