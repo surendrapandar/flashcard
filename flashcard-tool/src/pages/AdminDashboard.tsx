@@ -5,6 +5,7 @@ import {
   updateFlashcard,
   deleteFlashcard,
 } from "../API/fetchquestions";
+import { Link } from "react-router-dom";
 
 interface Flashcard {
   id: number;
@@ -74,6 +75,17 @@ const Dashboard: React.FC = () => {
 
   return (
     <div className="w-full max-w-3xl mx-auto mt-8 p-4 sm:p-6 bg-gray-100 rounded-lg shadow-md">
+      <div className="flex gap-5">
+        <button className="bg-red-600 text-white py-2 px-4 rounded-md mb-5 shadow-md hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500 transition">
+          <Link to="/">Click Here to Home</Link>
+        </button>
+        <button
+          onClick={() => window.location.reload()}
+          className="bg-red-600 text-white py-2 px-4 rounded-md mb-5 shadow-md hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500 transition"
+        >
+          Refresh
+        </button>
+      </div>
       <h2 className="text-xl sm:text-2xl font-bold mb-4 sm:mb-6 text-gray-800">
         Admin Dashboard
       </h2>
